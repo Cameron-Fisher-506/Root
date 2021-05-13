@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Root</string>
+
+    <string name="power_off">Power Off</string>
+    <string name="reboot">Reboot</string>
+    <string name="install_apk">Install APK</string>
 </resources>
