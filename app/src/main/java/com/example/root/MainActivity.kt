@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
                         process.waitFor()
                     } catch (ex: Exception) {
                         ex.printStackTrace()
-                        GeneralUtils.makeToast(applicationContext, "Device is not rooted.")
                     }
                 } else {
                     GeneralUtils.makeToast(applicationContext, "Device is not rooted.")
@@ -42,7 +41,6 @@ class MainActivity : AppCompatActivity() {
                         process.waitFor()
                     } catch (ex: Exception) {
                         ex.printStackTrace()
-                        GeneralUtils.makeToast(applicationContext, "Device is not rooted.")
                     }
                 } else {
                     GeneralUtils.makeToast(applicationContext, "Device is not rooted.")
@@ -56,7 +54,6 @@ class MainActivity : AppCompatActivity() {
                         process.waitFor()
                     } catch (ex: Exception) {
                         ex.printStackTrace()
-                        GeneralUtils.makeToast(applicationContext, "Device is not rooted.")
                     }
                 } else {
                     GeneralUtils.makeToast(applicationContext, "Device is not rooted.")
