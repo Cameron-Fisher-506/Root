@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private fun wireUI() {
         with(binding) {
             powerOffButton.setOnClickListener {
-                if (RootUtils.getSuPath().isNullOrBlank()) {
+                if (!RootUtils.getSuPath().isNullOrBlank()) {
                     try {
                         val process = Runtime.getRuntime().exec(arrayOf(RootUtils.getSuPath(), "-c", "reboot -p"))
                         process.waitFor()
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             rebootButton.setOnClickListener {
-                if (RootUtils.getSuPath().isNullOrBlank()) {
+                if (!RootUtils.getSuPath().isNullOrBlank()) {
                     try {
                         val process = Runtime.getRuntime().exec(arrayOf(RootUtils.getSuPath(), "-c", "reboot"))
                         process.waitFor()
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             installApkButton.setOnClickListener {
-                if (RootUtils.getSuPath().isNullOrBlank()) {
+                if (!RootUtils.getSuPath().isNullOrBlank()) {
                     try {
                         val process = Runtime.getRuntime().exec(arrayOf(RootUtils.getSuPath(), "-c", "pm install pathToApk.apk"))
                         process.waitFor()
